@@ -48,6 +48,7 @@ pub fn main() !void {
         }
     }
 }
+// private function that checks the digits to be valid integers.
 fn checkInt(i: u8) bool {
     if (i < 47) {
         return false;
@@ -55,7 +56,7 @@ fn checkInt(i: u8) bool {
         return false;
     } else return true;
 }
-
+// private function that prints fibonacci series of the given number
 fn printFib(n: i128) void {
     if (n > 185) {
         std.debug.print("Number too big", .{});
